@@ -1,0 +1,310 @@
+	<!doctype html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Job Results As Per Your Skills | UpIt.com</title>
+        <link rel="shortcut icon" href="assets/images/logo3.jpg" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="assets/images/fav_icon2.jpg">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    </head>
+
+		<script>
+			function login()
+			{
+				document.getElementById('signin').style.display='block';
+			}
+		
+		</script>
+
+    <body>
+       <header>
+           <div class="head-row container-fluid">
+               <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-3 logocol">
+                           <img src="assets/images/logo3.jpg" alt="">
+                           <a class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                             <i class="bi bi-list"></i>
+                         </a>
+                       </div>
+                       <div id="navbarNav" class="col-md-9 d-none d-md-block infocol">
+                           <div class="row d-none d-sm-block float-end info-row">
+                               <ul>
+                                   <li><a href= "mailto:sultanazsaifi6@gmail.com" ><i class="far fa-envelope"></i> support@cuckoochips.com</a></li>
+                                   <li><a href= "tel:+91 9159669599" ><i class="fas fa-mobile-alt"></i> +91 9159669599</a></li>
+                               </ul>
+                           </div>
+                           <div class="nav-row ">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="aboutus.html">About Us</a></li> 
+								<li> <div class="dropdown">
+    <button2 onclick="myFunction()" 
+			 class="dropbtn">Services 
+      <i class="fa fa-caret-down"></i>
+    </button2>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="quiz.html" target="_blank">Quiz</a>
+      <a href="services.html">Our Services</a>
+    </div>
+  </div></li> 
+  					                <li><a href="contactus.html">Contact Us</a></li>
+									<li><a href="signUp.html">Sign Up</a></li>
+									<li><a href="#"><button onclick="login()">Sign In</button></a></li>
+                                </ul>
+                           </div>
+						   <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+                       </div>
+                  </div>
+                   
+               </div>
+           </div>
+       </header>
+	
+     <!--     SignIn Code-->
+		
+		<div id="signin" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+		<button1 type="button"
+	onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Sign In">&times;
+		  </button1>
+      <img src="assets/images/icon/avatar.png" alt="Avatar" class="avatar">
+		<h1>Employee Sign In</h1>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+		<button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+		
+	    <div class="container">
+      <button type="button" onclick="document.getElementById('signin').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+    
+    <!--     Slider Code-->
+                
+    <div class="slider container-fluid">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/images/pic2.png" class="d-block w-100" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                <h3 class="animate__animated animate__backInLeft">Pace Your Career</h3>
+				<h4 class="animate__animated animate__backInleft"> Up Lift your Tech Career with UpIt</h4>
+				 
+              
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/pic2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h3 class="animate__animated animate__backInLeft">Pace Your Career</h3>
+               <h4 class="animate__animated animate__backInleft"> Up Lift your Tech Career with UpIt</h4>
+              </div>
+            </div>
+
+          </div>
+          <button2 class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button2>
+          <button3 class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button3>
+        </div>
+    </div>
+       
+<!--    Services Starts Here   -->
+  
+		<!--    Row1  -->
+		
+<section class="services container-fluid">
+    <div class="container">
+        <div class="row section-title">
+            <h2>Ready to streamline your search?</h2>
+			<p>With hundreds of up-to-date listings that connect you directly to company career sites, we make it easier to lift up your <i>career.</i></p>
+                  </div>
+        <div class="servic-row row">
+            <div class="servic-col col-md-4">
+                <div class="servcover">
+                    <img src="assets/images/icon/icon1.png" alt="">
+                    <h4>Verified jobs</h4>
+					<p>We source jobs directly from employer websites so you can get the highest-quality, most accurate listings. No duplicates. No spam.</p>
+                </div>
+            </div>
+            <div class="servic-col col-md-4">
+                <div class="servcover">
+                    <img src="assets/images/icon/icon2.png" alt="">
+                    <h4>Up to date listings</h4>
+                    <p>Get there first. Our jobs are updated every single day so you can browse the most current listings available, with many you won't find on other job sites.</p>
+                </div>
+            </div>
+            <div class="servic-col col-md-4">
+                <div class="servcover">
+                    <img src="assets/images/icon/icon3.png" alt="">
+                    <h4>Direct connections</h4>
+                    <p>Apply without the hassle. Our listings bring you directly to company websites so you can apply at the source, without extra signups.</p>
+             	</div>
+			</div>
+		</div>
+				
+				<!--    Row2  -->
+	
+	<div class="row section-title">
+            <h2>How does our Service Works?</h2>
+		<h3>Take the <a href="quiz.html" title="Quiz" target="_blank"><span>Quiz</span></a></h3>
+    </div>
+		<div class="servic-row row">
+            <div class="servic-col col-md-4">
+                <div class="servcover">
+                    <img src="assets/images/icon/icon4.png" alt="">
+                    <h4>Answer Few Easy Questions</h4>
+                    <p>A quick <a href="quiz.html" title="Quiz"><b>Quiz</b></a> will be administered to discover which job role is best tailored for you.</p>
+                </div>
+            </div>
+            <div class="servic-col col-md-4">
+                <div class="servcover">
+                    <img src="assets/images/icon/icon5.png" alt="">
+                    <h4>Add Your Preferences</h4>
+                    <p>No one should be denied the opportunity to pursue their dreams. We at UpIt place a high emphasis on your passion and aspirations. As a result, we take into account your desire and share our perspective.</p>
+                </div>
+            </div>
+            <div class="servic-col col-md-4">
+                <div class="servcover">
+                    <img src="assets/images/icon/icon6.png" alt="">
+                    <h4>Happy Endeavour</h4>
+                    <p>Sending you good vibes and positive energy. Good luck in this and all future endeavors.</p>
+                </div>
+            </div>
+		 </div>
+	</div>
+</section>
+   		
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 about">
+                <h2>About Us</h2>
+                <p>Everything you need to know to job<br> search - including seeing salary and stock<br> options upfront when looking </p>
+                <p>! It's just a layout and not an <br> actual service providing website.</p>
+                <div class="foot-address">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="addet">
+                        Mehrauli Badarpur Road, 
+						New Delhi, <br>
+						Delhi-110062
+                    </div>
+                </div>
+                <div class="foot-address">
+                    <div class="icon">
+                        <i class="far fa-envelope-open"></i>
+                    </div>
+                    <div class="addet">
+                        info@cuckoochips.com 
+                    </div>
+                </div>
+                <div class="foot-address">
+                    <div class="icon">
+                       <i class="fas fa-mobile-alt"></i>
+                   </div>
+                   <div class="addet">
+                   +91 9159669599 <br>
+                   +91 9159235679
+                   </div>
+                </div>
+                <div class="foot-address">
+                   <div class="icon">
+                   </div>
+                </div>
+        	</div>
+   
+        <div class="col-md-4 glink">
+            <ul>
+                 <li><a href="index.html"><i class="fas fa-angle-double-right"></i>Home</a></li>
+                <li><a href="aboutus.html"><i class="fas fa-angle-double-right"></i>About Us</a></li>
+                <li><a href="services.html"><i class="fas fa-angle-double-right"></i>Services</a></li>
+				 <li><a href="quiz.html" target="_blank"><i class="fas fa-angle-double-right"></i>Quiz</a></li>
+                <li><a href="contactus.html"><i class="fas fa-angle-double-right"></i>Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 tags">
+            <h2>Easy Tags</h2>
+            <ul>
+                <li>Finance</li>
+                <li>Web Design</li>
+                <li>trainee</li>
+                <li>Node Js</li>
+                <li>Java</li>
+                <li>Software Engineer</li>
+                <li>Graphic Design</li>
+				<li>Jobs</li>
+				<li>Placements</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</footer>
+<div class="copy">
+    <div class="container-fluid">
+        <a href="https://www.cuckoochips.com/">2020 &copy; All Rights Reserved | Designed and Developed by Cuckoo Chips</a>
+        <span>
+            <a href="https://github.com/login" title="github" target="_blank" ><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/" title="Pinterest" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+            <a href="https://www.twitter.com/" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </span>
+    </div>
+</div>
+      
+    </body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html> 
